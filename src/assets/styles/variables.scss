@@ -1,0 +1,30 @@
+$padding: 8px;
+$margin: 8px;
+
+$green-bg: #00C4BC;
+$red-bg:#FF647C;
+
+$radius: 4px;
+
+.btn{
+    padding: $padding $padding*2;
+    border: 0;
+    border-radius: $radius;
+    cursor: pointer;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    &__success{
+        background: $green-bg;
+        border: 1px solid $green-bg;
+            &:enabled:hover{
+                background: #7DDFC3;
+            }
+    } 
+    &__danger{
+    background: $red-bg;
+    border: 1px solid $red-bg;
+    &:enabled:hover{
+        background: #FDAFBB;
+    }
+}
+}
